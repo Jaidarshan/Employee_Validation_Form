@@ -1,0 +1,30 @@
+/* Global theme overrides */
+
+:root{
+  --brand-primary: #0d6efd;
+  --brand-accent: #20c997;
+  --brand-bg: #f6f7fb;
+}
+
+html, body, #root { height: 100%; }
+body { background-color: var(--brand-bg); }
+
+.app-bg { background: linear-gradient(180deg, #f6f7fb 0%, #eef1f7 100%); }
+
+header .h3 { color: #1f2937; }
+
+/* Buttons */
+.btn-primary { background-color: var(--brand-primary); border-color: var(--brand-primary); }
+.btn-primary:hover { filter: brightness(0.95); }
+
+.btn-warning { color: #1f2937; }
+
+/* Forms */
+.form-control:focus, .form-select:focus{
+  box-shadow: 0 0 0 .25rem rgba(13,110,253,.15);
+}
+
+/* Tables */
+.table thead th {
+  background-color: #f1f3f9;
+}
